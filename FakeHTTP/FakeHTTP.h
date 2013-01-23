@@ -1,13 +1,11 @@
-//
-//  FakeHTTP.h
-//  FakeHTTP
-//
-//  Created by Kurtis Seebaldt on 10/4/12.
-//  Copyright (c) 2012 Kurtis Seebaldt. All rights reserved.
-//
-
-#import <Foundation/Foundation.h>
+#import "FakeHTTPURLResponse.h"
 
 @interface FakeHTTP : NSObject
+
++ (void)startMocking;
++ (void)stopMocking;
+
++ (void)registerURL:(NSURL *)url withResponse:(FakeHTTPURLResponse *)response;
++ (FakeHTTPURLResponse *)responseForURL:(NSURL *)url;
 
 @end

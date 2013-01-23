@@ -7,10 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E18611E016B0891300C3D56C /* AsyncHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E18611DF16B0891300C3D56C /* AsyncHelper.m */; };
+		E1C332831624BD5F005F2C6B /* FakeHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3328016236AAD005F2C6B /* FakeHTTPURLResponse.m */; };
+		E1C3F231161E28FC0023DCBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7DF161E24D30005AF7B /* UIKit.framework */; };
+		E1C3F232161E28FC0023DCBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7C9161E24B20005AF7B /* Foundation.framework */; };
+		E1C3F234161E28FC0023DCBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */; };
+		E1C3F23A161E28FC0023DCBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C3F238161E28FC0023DCBB /* InfoPlist.strings */; };
+		E1C3F23C161E28FC0023DCBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F23B161E28FC0023DCBB /* main.m */; };
+		E1C3F23F161E28FD0023DCBB /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */; };
+		E1C3F241161E28FD0023DCBB /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F240161E28FD0023DCBB /* ExampleSpec.mm */; };
+		E1C3F247161E290D0023DCBB /* libFakeHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7C6161E24B20005AF7B /* libFakeHTTP.a */; };
+		E1C3F24A161E29F60023DCBB /* FakeHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */; };
+		E1C3F24C161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */; };
 		E1C4E7CA161E24B20005AF7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7C9161E24B20005AF7B /* Foundation.framework */; };
 		E1C4E7CF161E24B20005AF7B /* FakeHTTP.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1C4E7CE161E24B20005AF7B /* FakeHTTP.h */; };
 		E1C4E7D1161E24B20005AF7B /* FakeHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4E7D0161E24B20005AF7B /* FakeHTTP.m */; };
+		E1C822F31624C0620097E199 /* FakeHTTPSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C822F21624C0620097E199 /* FakeHTTPSpec.mm */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1C3F245161E29070023DCBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1C4E7BD161E24B20005AF7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C4E7C5161E24B20005AF7B;
+			remoteInfo = FakeHTTP;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E1C4E7C4161E24B20005AF7B /* CopyFiles */ = {
@@ -26,14 +49,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E18611DE16B0891300C3D56C /* AsyncHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncHelper.h; sourceTree = "<group>"; };
+		E18611DF16B0891300C3D56C /* AsyncHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncHelper.m; sourceTree = "<group>"; };
+		E1C3327F16236AAD005F2C6B /* FakeHTTPURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeHTTPURLResponse.h; sourceTree = "<group>"; };
+		E1C3328016236AAD005F2C6B /* FakeHTTPURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeHTTPURLResponse.m; sourceTree = "<group>"; };
+		E1C3F22F161E28FC0023DCBB /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E1C3F237161E28FC0023DCBB /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		E1C3F239161E28FC0023DCBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E1C3F23B161E28FC0023DCBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1C3F23D161E28FC0023DCBB /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		E1C3F240161E28FD0023DCBB /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		E1C3F248161E29F60023DCBB /* FakeHTTPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeHTTPURLProtocol.h; sourceTree = "<group>"; };
+		E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeHTTPURLProtocol.m; sourceTree = "<group>"; };
+		E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FakeHTTPURLProtocolSpec.mm; sourceTree = "<group>"; };
 		E1C4E7C6161E24B20005AF7B /* libFakeHTTP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFakeHTTP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C4E7C9161E24B20005AF7B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1C4E7CD161E24B20005AF7B /* FakeHTTP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FakeHTTP-Prefix.pch"; sourceTree = "<group>"; };
 		E1C4E7CE161E24B20005AF7B /* FakeHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeHTTP.h; sourceTree = "<group>"; };
 		E1C4E7D0161E24B20005AF7B /* FakeHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeHTTP.m; sourceTree = "<group>"; };
+		E1C4E7DD161E24D30005AF7B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1C4E7DF161E24D30005AF7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1C822F21624C0620097E199 /* FakeHTTPSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FakeHTTPSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E1C3F22C161E28FC0023DCBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C3F247161E290D0023DCBB /* libFakeHTTP.a in Frameworks */,
+				E1C3F231161E28FC0023DCBB /* UIKit.framework in Frameworks */,
+				E1C3F232161E28FC0023DCBB /* Foundation.framework in Frameworks */,
+				E1C3F234161E28FC0023DCBB /* CoreGraphics.framework in Frameworks */,
+				E1C3F23F161E28FD0023DCBB /* Cedar-iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1C4E7C3161E24B20005AF7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +98,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1C3F235161E28FC0023DCBB /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */,
+				E1C3F240161E28FD0023DCBB /* ExampleSpec.mm */,
+				E1C3F236161E28FC0023DCBB /* Supporting Files */,
+				E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */,
+				E1C822F21624C0620097E199 /* FakeHTTPSpec.mm */,
+				E18611DE16B0891300C3D56C /* AsyncHelper.h */,
+				E18611DF16B0891300C3D56C /* AsyncHelper.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		E1C3F236161E28FC0023DCBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1C3F237161E28FC0023DCBB /* Specs-Info.plist */,
+				E1C3F238161E28FC0023DCBB /* InfoPlist.strings */,
+				E1C3F23B161E28FC0023DCBB /* main.m */,
+				E1C3F23D161E28FC0023DCBB /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E1C4E7BB161E24B20005AF7B = {
 			isa = PBXGroup;
 			children = (
 				E1C4E7CB161E24B20005AF7B /* FakeHTTP */,
+				E1C3F235161E28FC0023DCBB /* Specs */,
 				E1C4E7C8161E24B20005AF7B /* Frameworks */,
 				E1C4E7C7161E24B20005AF7B /* Products */,
 			);
@@ -58,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C4E7C6161E24B20005AF7B /* libFakeHTTP.a */,
+				E1C3F22F161E28FC0023DCBB /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				E1C4E7C9161E24B20005AF7B /* Foundation.framework */,
+				E1C4E7DD161E24D30005AF7B /* SenTestingKit.framework */,
+				E1C4E7DF161E24D30005AF7B /* UIKit.framework */,
+				E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,6 +159,10 @@
 				E1C4E7CE161E24B20005AF7B /* FakeHTTP.h */,
 				E1C4E7D0161E24B20005AF7B /* FakeHTTP.m */,
 				E1C4E7CC161E24B20005AF7B /* Supporting Files */,
+				E1C3F248161E29F60023DCBB /* FakeHTTPURLProtocol.h */,
+				E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */,
+				E1C3327F16236AAD005F2C6B /* FakeHTTPURLResponse.h */,
+				E1C3328016236AAD005F2C6B /* FakeHTTPURLResponse.m */,
 			);
 			path = FakeHTTP;
 			sourceTree = "<group>";
@@ -91,6 +178,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E1C3F22E161E28FC0023DCBB /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C3F242161E28FD0023DCBB /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				E1C3F22B161E28FC0023DCBB /* Sources */,
+				E1C3F22C161E28FC0023DCBB /* Frameworks */,
+				E1C3F22D161E28FC0023DCBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1C3F246161E29070023DCBB /* PBXTargetDependency */,
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = E1C3F22F161E28FC0023DCBB /* Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 		E1C4E7C5161E24B20005AF7B /* FakeHTTP */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C4E7D4161E24B20005AF7B /* Build configuration list for PBXNativeTarget "FakeHTTP" */;
@@ -130,22 +235,118 @@
 			projectRoot = "";
 			targets = (
 				E1C4E7C5161E24B20005AF7B /* FakeHTTP */,
+				E1C3F22E161E28FC0023DCBB /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E1C3F22D161E28FC0023DCBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C3F23A161E28FC0023DCBB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E1C3F22B161E28FC0023DCBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C3F23C161E28FC0023DCBB /* main.m in Sources */,
+				E1C3F241161E28FD0023DCBB /* ExampleSpec.mm in Sources */,
+				E1C3F24C161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm in Sources */,
+				E1C822F31624C0620097E199 /* FakeHTTPSpec.mm in Sources */,
+				E18611E016B0891300C3D56C /* AsyncHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1C4E7C2161E24B20005AF7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E1C4E7D1161E24B20005AF7B /* FakeHTTP.m in Sources */,
+				E1C3F24A161E29F60023DCBB /* FakeHTTPURLProtocol.m in Sources */,
+				E1C332831624BD5F005F2C6B /* FakeHTTPURLResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E1C3F246161E29070023DCBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1C4E7C5161E24B20005AF7B /* FakeHTTP */;
+			targetProxy = E1C3F245161E29070023DCBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1C3F238161E28FC0023DCBB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1C3F239161E28FC0023DCBB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		E1C3F243161E28FD0023DCBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/Specs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E1C3F244161E28FD0023DCBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"\"$(SRCROOT)/Specs/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		E1C4E7D2161E24B20005AF7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -198,6 +399,7 @@
 				DSTROOT = /tmp/FakeHTTP.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FakeHTTP/FakeHTTP-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -210,6 +412,7 @@
 				DSTROOT = /tmp/FakeHTTP.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FakeHTTP/FakeHTTP-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -219,6 +422,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E1C3F242161E28FD0023DCBB /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C3F243161E28FD0023DCBB /* Debug */,
+				E1C3F244161E28FD0023DCBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1C4E7C0161E24B20005AF7B /* Build configuration list for PBXProject "FakeHTTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -235,6 +447,7 @@
 				E1C4E7D6161E24B20005AF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
