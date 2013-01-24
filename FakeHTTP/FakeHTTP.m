@@ -22,4 +22,8 @@ static __strong NSMutableDictionary *__responseForURL;
     return [__responseForURL objectForKey:url];
 }
 
++ (void)reset {
+    [__responseForURL removeAllObjects];
+}
+
 @end

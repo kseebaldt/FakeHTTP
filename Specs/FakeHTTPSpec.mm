@@ -20,28 +20,34 @@ describe(@"FakeHTTP", ^{
     describe(@"mocking web requests", ^{
         __block NSURL *url;
         __block NSData *data;
+        __block NSDictionary *headers;
         
         beforeEach(^{
             url = [NSURL URLWithString:@"http://example.com/foo"];
             data = [@"hello" dataUsingEncoding:NSUTF8StringEncoding];
-            FakeHTTPURLResponse *response = [[FakeHTTPURLResponse alloc] initWithStatusCode:200 headers:nil body:data];
+            headers = [NSDictionary dictionaryWithObject:@"bar" forKey:@"foo"];
+            FakeHTTPURLResponse *response = [[FakeHTTPURLResponse alloc] initWithStatusCode:200 headers:headers body:data];
             
             [FakeHTTP registerURL:url withResponse:response];
         });
         
         it(@"should return the registered response", ^{
             NSURLRequest *request = [NSURLRequest requestWithURL:url];
+            __block NSHTTPURLResponse *httpResponse = nil;
             __block NSData *responseData = nil;
 
             [NSURLConnection sendAsynchronousRequest:request
                                                queue:queue
                                    completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                httpResponse = (NSHTTPURLResponse *)response;
                 responseData = data;
             }];
             [asyncHelper runUntil:^BOOL{
                 return responseData != nil;
             }];
             responseData should equal(data);
+            httpResponse.statusCode should equal(200);
+            httpResponse.allHeaderFields should equal(headers);
         });
     });
     
