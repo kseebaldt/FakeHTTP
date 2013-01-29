@@ -5,7 +5,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.pollingInterval = 0.05;
+        self.pollingInterval = 0.01;
         self.timeout = 1.0;
     }
     return self;
