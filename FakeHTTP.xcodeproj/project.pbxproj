@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE104EC71707CB5700A9171F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE104EC61707CB5700A9171F /* Cocoa.framework */; };
+		AE104ED61707CB8C00A9171F /* FakeHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4E7D0161E24B20005AF7B /* FakeHTTP.m */; };
+		AE104ED71707CB9200A9171F /* FakeHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */; };
+		AE104ED81707CB9700A9171F /* FakeHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3328016236AAD005F2C6B /* FakeHTTPURLResponse.m */; };
 		E18611E016B0891300C3D56C /* AsyncHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E18611DF16B0891300C3D56C /* AsyncHelper.m */; };
 		E1C332831624BD5F005F2C6B /* FakeHTTPURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3328016236AAD005F2C6B /* FakeHTTPURLResponse.m */; };
 		E1C3F231161E28FC0023DCBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7DF161E24D30005AF7B /* UIKit.framework */; };
@@ -48,6 +52,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE104EC51707CB5700A9171F /* libFakeHTTP-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFakeHTTP-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE104EC61707CB5700A9171F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		AE104EC91707CB5700A9171F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AE104ECA1707CB5700A9171F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AE104ECB1707CB5700A9171F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AE104ECE1707CB5700A9171F /* FakeHTTP-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FakeHTTP-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		E18611DE16B0891300C3D56C /* AsyncHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncHelper.h; sourceTree = "<group>"; };
 		E18611DF16B0891300C3D56C /* AsyncHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncHelper.m; sourceTree = "<group>"; };
 		E1C3327F16236AAD005F2C6B /* FakeHTTPURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeHTTPURLResponse.h; sourceTree = "<group>"; };
@@ -73,6 +83,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE104EC21707CB5700A9171F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE104EC71707CB5700A9171F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1C3F22C161E28FC0023DCBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,6 +114,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE104EC81707CB5700A9171F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE104EC91707CB5700A9171F /* AppKit.framework */,
+				AE104ECA1707CB5700A9171F /* CoreData.framework */,
+				AE104ECB1707CB5700A9171F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AE104ECC1707CB5700A9171F /* FakeHTTP-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				AE104ECD1707CB5700A9171F /* Supporting Files */,
+			);
+			path = "FakeHTTP-OSX";
+			sourceTree = "<group>";
+		};
+		AE104ECD1707CB5700A9171F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE104ECE1707CB5700A9171F /* FakeHTTP-OSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E1C3F235161E28FC0023DCBB /* Specs */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +169,7 @@
 			children = (
 				E1C4E7CB161E24B20005AF7B /* FakeHTTP */,
 				E1C3F235161E28FC0023DCBB /* Specs */,
+				AE104ECC1707CB5700A9171F /* FakeHTTP-OSX */,
 				E1C4E7C8161E24B20005AF7B /* Frameworks */,
 				E1C4E7C7161E24B20005AF7B /* Products */,
 			);
@@ -135,6 +180,7 @@
 			children = (
 				E1C4E7C6161E24B20005AF7B /* libFakeHTTP.a */,
 				E1C3F22F161E28FC0023DCBB /* Specs.app */,
+				AE104EC51707CB5700A9171F /* libFakeHTTP-OSX.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +192,8 @@
 				E1C4E7DD161E24D30005AF7B /* SenTestingKit.framework */,
 				E1C4E7DF161E24D30005AF7B /* UIKit.framework */,
 				E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */,
+				AE104EC61707CB5700A9171F /* Cocoa.framework */,
+				AE104EC81707CB5700A9171F /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,7 +222,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		AE104EC31707CB5700A9171F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		AE104EC41707CB5700A9171F /* FakeHTTP-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE104ED21707CB5700A9171F /* Build configuration list for PBXNativeTarget "FakeHTTP-OSX" */;
+			buildPhases = (
+				AE104EC11707CB5700A9171F /* Sources */,
+				AE104EC21707CB5700A9171F /* Frameworks */,
+				AE104EC31707CB5700A9171F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FakeHTTP-OSX";
+			productName = "FakeHTTP-OSX";
+			productReference = AE104EC51707CB5700A9171F /* libFakeHTTP-OSX.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		E1C3F22E161E28FC0023DCBB /* Specs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1C3F242161E28FD0023DCBB /* Build configuration list for PBXNativeTarget "Specs" */;
@@ -233,6 +308,7 @@
 			targets = (
 				E1C4E7C5161E24B20005AF7B /* FakeHTTP */,
 				E1C3F22E161E28FC0023DCBB /* Specs */,
+				AE104EC41707CB5700A9171F /* FakeHTTP-OSX */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +325,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE104EC11707CB5700A9171F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE104ED61707CB8C00A9171F /* FakeHTTP.m in Sources */,
+				AE104ED71707CB9200A9171F /* FakeHTTPURLProtocol.m in Sources */,
+				AE104ED81707CB9700A9171F /* FakeHTTPURLResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1C3F22B161E28FC0023DCBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +378,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AE104ED31707CB5700A9171F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FakeHTTP-OSX/FakeHTTP-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AE104ED41707CB5700A9171F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FakeHTTP-OSX/FakeHTTP-OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		E1C3F243161E28FD0023DCBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +548,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE104ED21707CB5700A9171F /* Build configuration list for PBXNativeTarget "FakeHTTP-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE104ED31707CB5700A9171F /* Debug */,
+				AE104ED41707CB5700A9171F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E1C3F242161E28FD0023DCBB /* Build configuration list for PBXNativeTarget "Specs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
