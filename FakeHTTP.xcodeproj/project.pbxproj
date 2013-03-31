@@ -15,7 +15,6 @@
 		E1C3F23A161E28FC0023DCBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C3F238161E28FC0023DCBB /* InfoPlist.strings */; };
 		E1C3F23C161E28FC0023DCBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F23B161E28FC0023DCBB /* main.m */; };
 		E1C3F23F161E28FD0023DCBB /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */; };
-		E1C3F241161E28FD0023DCBB /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F240161E28FD0023DCBB /* ExampleSpec.mm */; };
 		E1C3F247161E290D0023DCBB /* libFakeHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7C6161E24B20005AF7B /* libFakeHTTP.a */; };
 		E1C3F24A161E29F60023DCBB /* FakeHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */; };
 		E1C3F24C161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */; };
@@ -60,7 +59,6 @@
 		E1C3F23B161E28FC0023DCBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1C3F23D161E28FC0023DCBB /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
-		E1C3F240161E28FD0023DCBB /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
 		E1C3F248161E29F60023DCBB /* FakeHTTPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeHTTPURLProtocol.h; sourceTree = "<group>"; };
 		E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeHTTPURLProtocol.m; sourceTree = "<group>"; };
 		E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FakeHTTPURLProtocolSpec.mm; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */,
-				E1C3F240161E28FD0023DCBB /* ExampleSpec.mm */,
 				E1C3F236161E28FC0023DCBB /* Supporting Files */,
 				E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */,
 				E1C822F21624C0620097E199 /* FakeHTTPSpec.mm */,
@@ -257,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C3F23C161E28FC0023DCBB /* main.m in Sources */,
-				E1C3F241161E28FD0023DCBB /* ExampleSpec.mm in Sources */,
 				E1C3F24C161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm in Sources */,
 				E1C822F31624C0620097E199 /* FakeHTTPSpec.mm in Sources */,
 				E18611E016B0891300C3D56C /* AsyncHelper.m in Sources */,
