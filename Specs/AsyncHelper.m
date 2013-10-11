@@ -1,5 +1,4 @@
 #import "AsyncHelper.h"
-#import "FakeHTTP.h"
 
 @implementation AsyncHelper
 
