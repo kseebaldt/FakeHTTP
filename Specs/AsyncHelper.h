@@ -8,5 +8,4 @@ typedef BOOL(^checkBlock)();
 @property (assign, nonatomic) NSTimeInterval timeout;
 
 - (void)runUntil:(checkBlock)block;
-
 @end

@@ -17,6 +17,7 @@
 }
 
 - (void)startLoading {
+    [FakeHTTP addRequest:self.request];
     FakeHTTPURLResponse *response = [FakeHTTP responseForURL:self.request.URL];
     if (response) {
         NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] initWithURL:self.request.URL
