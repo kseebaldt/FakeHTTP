@@ -21,36 +21,73 @@ describe(@"FakeHTTP", ^{
         __block NSURL *url;
         __block NSData *data;
         __block NSDictionary *headers;
-        
+        __block NSHTTPURLResponse *httpResponse = nil;
+        __block NSData *responseData = nil;
+        __block NSString *urlStr = @"http://example.com/foo";
+        __block FakeHTTPURLResponse *response;
+
         beforeEach(^{
-            url = [NSURL URLWithString:@"http://example.com/foo"];
+            url = [NSURL URLWithString:urlStr];
             data = [@"hello" dataUsingEncoding:NSUTF8StringEncoding];
             headers = [NSDictionary dictionaryWithObject:@"bar" forKey:@"foo"];
-            FakeHTTPURLResponse *response = [[FakeHTTPURLResponse alloc] initWithStatusCode:200 headers:headers body:data];
-            
-            [FakeHTTP registerURL:url withResponse:response];
+            response = [[FakeHTTPURLResponse alloc] initWithStatusCode:200 headers:headers body:data];
         });
-        
-        it(@"should return the registered response", ^{
-            NSURLRequest *request = [NSURLRequest requestWithURL:url];
-            __block NSHTTPURLResponse *httpResponse = nil;
-            __block NSData *responseData = nil;
 
-            [NSURLConnection sendAsynchronousRequest:request
-                                               queue:queue
-                                   completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-                httpResponse = (NSHTTPURLResponse *)response;
-                responseData = data;
-            }];
-            [asyncHelper runUntil:^BOOL{
-                return responseData != nil;
-            }];
-            responseData should equal(data);
-            httpResponse.statusCode should equal(200);
-            httpResponse.allHeaderFields should equal(headers);
+        describe(@"by matching on an exact URL", ^{
+            beforeEach(^{
+                [FakeHTTP registerURL:url withResponse:response];
+
+                NSURLRequest *request = [NSURLRequest requestWithURL:url];
+
+                [NSURLConnection sendAsynchronousRequest:request
+                                                   queue:queue
+                                       completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                                           httpResponse = (NSHTTPURLResponse *)response;
+                                           responseData = data;
+                                       }];
+                [asyncHelper runUntil:^BOOL{
+                    return responseData != nil;
+                }];
+            });
+
+            it(@"should return the registered response", ^{
+                responseData should equal(data);
+                httpResponse.statusCode should equal(200);
+                httpResponse.allHeaderFields should equal(headers);
+            });
+
+            it(@"provides access to the request", ^{
+                FakeHTTP.requests.count should equal(1);
+                FakeHTTP.lastRequest.URL.absoluteString should equal(urlStr);
+            });
+        });
+
+        describe(@"by matching using a predicate", ^{
+            beforeEach(^{
+                NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS %@", @"example.com"];
+                [FakeHTTP registerURLPredicate:predicate withResponse:response];
+
+                NSURLRequest *request = [NSURLRequest requestWithURL:url];
+
+                [NSURLConnection sendAsynchronousRequest:request
+                                                   queue:queue
+                                       completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                                           httpResponse = (NSHTTPURLResponse *)response;
+                                           responseData = data;
+                                       }];
+                [asyncHelper runUntil:^BOOL{
+                    return responseData != nil;
+                }];
+            });
+
+            it(@"should return the registered response", ^{
+                responseData should equal(data);
+                httpResponse.statusCode should equal(200);
+                httpResponse.allHeaderFields should equal(headers);
+            });
         });
     });
-    
+
     describe(@"making a request that is not registered", ^{
         __block NSURL *url;
         

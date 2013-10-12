@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FF9C3AFB-EA05-4785-95E8-82383BD41ED5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FakeHTTP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E299FB96-507F-44AC-8250-6B7CE4CBAD4A</key>
+		<string>https://github.com/heisters/FakeHTTP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FakeHTTP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E299FB96-507F-44AC-8250-6B7CE4CBAD4A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/GoodGuide/iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E299FB96-507F-44AC-8250-6B7CE4CBAD4A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E299FB96-507F-44AC-8250-6B7CE4CBAD4A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FakeHTTP</string>
+		</dict>
+	</array>
+</dict>
+</plist>
