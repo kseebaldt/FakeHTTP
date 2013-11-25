@@ -17,22 +17,24 @@
 }
 
 - (void)startLoading {
+    [FakeHTTP addRequest:self.request];
     FakeHTTPURLResponse *response = [FakeHTTP responseForURL:self.request.URL];
     if (response) {
         NSHTTPURLResponse *urlResponse = [[NSHTTPURLResponse alloc] initWithURL:self.request.URL
                                                                      statusCode:response.statusCode
-                                                                    HTTPVersion:@"1.1"                                                                   headerFields:response.headers];
+                                                                    HTTPVersion:@"1.1"
+                                                                   headerFields:response.headers];
         [self.client URLProtocol:self
               didReceiveResponse:urlResponse
               cacheStoragePolicy:NSURLCacheStorageNotAllowed];
-        
+
         if (response.body) {
             [self.client URLProtocol:self didLoadData:response.body];
         }
         if (response.error) {
             [self.client URLProtocol:self didFailWithError:response.error];
         } else {
-            [self.client URLProtocolDidFinishLoading:self];            
+            [self.client URLProtocolDidFinishLoading:self];
         }
     } else {
         NSString *message = [NSString stringWithFormat:@"Request for URL: %@ not registered", self.request.URL];
