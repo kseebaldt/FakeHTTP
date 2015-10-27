@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A6627B1BDF0E0400EF0FEA /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A6627A1BDF0E0400EF0FEA /* Cedar.framework */; };
+		34A6627C1BDF0E1100EF0FEA /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A6627A1BDF0E0400EF0FEA /* Cedar.framework */; };
+		34A6627E1BDF0EE200EF0FEA /* Cedar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34A6627A1BDF0E0400EF0FEA /* Cedar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE104EC71707CB5700A9171F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE104EC61707CB5700A9171F /* Cocoa.framework */; };
 		AE104ED61707CB8C00A9171F /* FakeHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4E7D0161E24B20005AF7B /* FakeHTTP.m */; };
 		AE104ED71707CB9200A9171F /* FakeHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */; };
@@ -16,9 +19,7 @@
 		E1C3F231161E28FC0023DCBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7DF161E24D30005AF7B /* UIKit.framework */; };
 		E1C3F232161E28FC0023DCBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7C9161E24B20005AF7B /* Foundation.framework */; };
 		E1C3F234161E28FC0023DCBB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */; };
-		E1C3F23A161E28FC0023DCBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1C3F238161E28FC0023DCBB /* InfoPlist.strings */; };
-		E1C3F23C161E28FC0023DCBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F23B161E28FC0023DCBB /* main.m */; };
-		E1C3F23F161E28FD0023DCBB /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */; };
+		E1C3F23C161E28FC0023DCBB /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F23B161E28FC0023DCBB /* main.mm */; };
 		E1C3F247161E290D0023DCBB /* libFakeHTTP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C4E7C6161E24B20005AF7B /* libFakeHTTP.a */; };
 		E1C3F24A161E29F60023DCBB /* FakeHTTPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */; };
 		E1C3F24C161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */; };
@@ -39,6 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		34A6627D1BDF0EDA00EF0FEA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34A6627E1BDF0EE200EF0FEA /* Cedar.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E1C4E7C4161E24B20005AF7B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		34A6627A1BDF0E0400EF0FEA /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Specs/Frameworks/Cedar.framework; sourceTree = "<group>"; };
 		AE104EC51707CB5700A9171F /* libFakeHTTP-OSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFakeHTTP-OSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE104EC61707CB5700A9171F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		AE104EC91707CB5700A9171F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		AE104ECA1707CB5700A9171F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		AE104ECB1707CB5700A9171F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE104ECE1707CB5700A9171F /* FakeHTTP-OSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FakeHTTP-OSX-Prefix.pch"; sourceTree = "<group>"; };
 		E18611DE16B0891300C3D56C /* AsyncHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncHelper.h; sourceTree = "<group>"; };
 		E18611DF16B0891300C3D56C /* AsyncHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncHelper.m; sourceTree = "<group>"; };
@@ -65,10 +74,7 @@
 		E1C3F22F161E28FC0023DCBB /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E1C3F237161E28FC0023DCBB /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
-		E1C3F239161E28FC0023DCBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E1C3F23B161E28FC0023DCBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E1C3F23D161E28FC0023DCBB /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
-		E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		E1C3F23B161E28FC0023DCBB /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		E1C3F248161E29F60023DCBB /* FakeHTTPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeHTTPURLProtocol.h; sourceTree = "<group>"; };
 		E1C3F249161E29F60023DCBB /* FakeHTTPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeHTTPURLProtocol.m; sourceTree = "<group>"; };
 		E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FakeHTTPURLProtocolSpec.mm; sourceTree = "<group>"; };
@@ -77,7 +83,6 @@
 		E1C4E7CD161E24B20005AF7B /* FakeHTTP-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FakeHTTP-Prefix.pch"; sourceTree = "<group>"; };
 		E1C4E7CE161E24B20005AF7B /* FakeHTTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeHTTP.h; sourceTree = "<group>"; };
 		E1C4E7D0161E24B20005AF7B /* FakeHTTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeHTTP.m; sourceTree = "<group>"; };
-		E1C4E7DD161E24D30005AF7B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		E1C4E7DF161E24D30005AF7B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		E1C822F21624C0620097E199 /* FakeHTTPSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FakeHTTPSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,10 +101,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C3F247161E290D0023DCBB /* libFakeHTTP.a in Frameworks */,
+				34A6627C1BDF0E1100EF0FEA /* Cedar.framework in Frameworks */,
 				E1C3F231161E28FC0023DCBB /* UIKit.framework in Frameworks */,
 				E1C3F232161E28FC0023DCBB /* Foundation.framework in Frameworks */,
 				E1C3F234161E28FC0023DCBB /* CoreGraphics.framework in Frameworks */,
-				E1C3F23F161E28FD0023DCBB /* Cedar-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A6627B1BDF0E0400EF0FEA /* Cedar.framework in Frameworks */,
 				E1C4E7CA161E24B20005AF7B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,16 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AE104EC81707CB5700A9171F /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AE104EC91707CB5700A9171F /* AppKit.framework */,
-				AE104ECA1707CB5700A9171F /* CoreData.framework */,
-				AE104ECB1707CB5700A9171F /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		AE104ECC1707CB5700A9171F /* FakeHTTP-OSX */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +139,6 @@
 		E1C3F235161E28FC0023DCBB /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				E1C3F23E161E28FD0023DCBB /* Cedar-iOS.framework */,
 				E1C3F236161E28FC0023DCBB /* Supporting Files */,
 				E1C3F24B161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm */,
 				E1C822F21624C0620097E199 /* FakeHTTPSpec.mm */,
@@ -157,9 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C3F237161E28FC0023DCBB /* Specs-Info.plist */,
-				E1C3F238161E28FC0023DCBB /* InfoPlist.strings */,
-				E1C3F23B161E28FC0023DCBB /* main.m */,
-				E1C3F23D161E28FC0023DCBB /* Specs-Prefix.pch */,
+				E1C3F23B161E28FC0023DCBB /* main.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -188,12 +181,11 @@
 		E1C4E7C8161E24B20005AF7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				34A6627A1BDF0E0400EF0FEA /* Cedar.framework */,
 				E1C4E7C9161E24B20005AF7B /* Foundation.framework */,
-				E1C4E7DD161E24D30005AF7B /* SenTestingKit.framework */,
 				E1C4E7DF161E24D30005AF7B /* UIKit.framework */,
 				E1C3F233161E28FC0023DCBB /* CoreGraphics.framework */,
 				AE104EC61707CB5700A9171F /* Cocoa.framework */,
-				AE104EC81707CB5700A9171F /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -257,6 +249,7 @@
 				E1C3F22B161E28FC0023DCBB /* Sources */,
 				E1C3F22C161E28FC0023DCBB /* Frameworks */,
 				E1C3F22D161E28FC0023DCBB /* Resources */,
+				34A6627D1BDF0EDA00EF0FEA /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -291,7 +284,7 @@
 		E1C4E7BD161E24B20005AF7B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Kurtis Seebaldt";
 			};
 			buildConfigurationList = E1C4E7C0161E24B20005AF7B /* Build configuration list for PBXProject "FakeHTTP" */;
@@ -318,7 +311,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C3F23A161E28FC0023DCBB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1C3F23C161E28FC0023DCBB /* main.m in Sources */,
+				E1C3F23C161E28FC0023DCBB /* main.mm in Sources */,
 				E1C3F24C161E2AB20023DCBB /* FakeHTTPURLProtocolSpec.mm in Sources */,
 				E1C822F31624C0620097E199 /* FakeHTTPSpec.mm in Sources */,
 				E18611E016B0891300C3D56C /* AsyncHelper.m in Sources */,
@@ -365,17 +357,6 @@
 			targetProxy = E1C3F245161E29070023DCBB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E1C3F238161E28FC0023DCBB /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1C3F239161E28FC0023DCBB /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AE104ED31707CB5700A9171F /* Debug */ = {
@@ -425,23 +406,23 @@
 		E1C3F243161E28FD0023DCBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
-				CLANG_CXX_LIBRARY = "libstdc++";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/Specs/Frameworks\"",
+					"$(PROJECT_DIR)/Specs/Frameworks",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fublaza.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,24 +431,24 @@
 		E1C3F244161E28FD0023DCBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
-				CLANG_CXX_LIBRARY = "libstdc++";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 					"\"$(SRCROOT)/Specs/Frameworks\"",
+					"$(PROJECT_DIR)/Specs/Frameworks",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 					"-lstdc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fublaza.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -524,6 +505,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/FakeHTTP.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FakeHTTP/FakeHTTP-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -537,6 +522,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/FakeHTTP.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FakeHTTP/FakeHTTP-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
