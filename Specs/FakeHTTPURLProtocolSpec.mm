@@ -1,3 +1,4 @@
+#import <Cedar/Cedar.h>
 #import "FakeHTTPURLProtocol.h"
 
 using namespace Cedar::Matchers;

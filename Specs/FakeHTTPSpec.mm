@@ -1,3 +1,4 @@
+#import <Cedar/Cedar.h>
 #import "FakeHTTP.h"
 #import "FakeHTTPURLProtocol.h"
 #import "AsyncHelper.h"
